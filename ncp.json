@@ -1,0 +1,343 @@
+{
+  "sprint": {
+    "enabled": true,
+    "key": 0,
+    "Mode": "Omni"
+  },
+  "blink": {
+    "enabled": false,
+    "key": 66,
+    "Mode": "Normal",
+    "PulseInterval": 1.0,
+    "FakePlayer": true
+  },
+  "flight": {
+    "enabled": false,
+    "key": 70,
+    "Mode": "NCP"
+  },
+  "watermark": {
+    "enabled": true,
+    "key": 0
+  },
+  "arraylist": {
+    "enabled": true,
+    "key": 0,
+    "RenderSuffix": true,
+    "SortByLength": true,
+    "ShowRender": false
+  },
+  "killaura": {
+    "enabled": false,
+    "key": 82,
+    "Mode": "Single",
+    "SortingMode": "HurtTime",
+    "Range": {
+      "min": 4.5,
+      "max": 4.5
+    },
+    "TimingMode": "CPS",
+    "AttackCharge": {
+      "min": 0.9,
+      "max": 0.9
+    },
+    "CPS": {
+      "min": 12.0,
+      "max": 16.0
+    },
+    "MovementCorrection": false,
+    "NoSwing": false,
+    "CrackSize": 13.0,
+    "FOV": 360.0,
+    "AttackWhilstUsing": false,
+    "KeepSprint": true,
+    "AutoblockMode": "Vanilla",
+    "AutoblockRange": {
+      "min": 10.0,
+      "max": 10.0
+    },
+    "AutoBlockHand": "Main",
+    "RotationMethod": "Silent",
+    "RotationMode": "Simple",
+    "RotationRange": {
+      "min": 10.0,
+      "max": 10.0
+    },
+    "RotationSpeed": {
+      "min": 0.6,
+      "max": 0.8
+    },
+    "Randomization": false,
+    "Raycast": false,
+    "AttackPlayers": true,
+    "AttackNonPlayers": false,
+    "AttackTeammates": false,
+    "AttackInvis": true,
+    "AttackThroughWalls": true,
+    "RenderTarget": true,
+    "RenderRange": true
+  },
+  "fullbright": {
+    "enabled": true,
+    "key": 0,
+    "Mode": "Effect"
+  },
+  "noslow": {
+    "enabled": true,
+    "key": 0,
+    "Mode": "NCP"
+  },
+  "velocity": {
+    "enabled": true,
+    "key": 0,
+    "Mode": "Cancel",
+    "Chance": 100.0,
+    "Vertical": 100.0,
+    "Horizontal": 0.0
+  },
+  "scaffold": {
+    "enabled": false,
+    "key": 71,
+    "Mode": "Normal",
+    "CPS": 20.0,
+    "PlaceHand": "Main",
+    "RotationMode": "Silent",
+    "RotationSpeed": 1.0,
+    "Raycast": false,
+    "MovementCorrection": false,
+    "NoSwing": true,
+    "AutoBlock": true,
+    "AutoBlockMode": "Legit",
+    "Randomization": false,
+    "Expand": 0.0,
+    "Down": false,
+    "Crouch": false,
+    "CrouchDistance": 1.0,
+    "Jump": true,
+    "KeepY": true,
+    "RenderBlock": true
+  },
+  "backtrack": {
+    "enabled": false,
+    "key": 0,
+    "Ticks": {
+      "min": 20.0,
+      "max": 20.0
+    },
+    "RenderRealPos": true
+  },
+  "reach": {
+    "enabled": false,
+    "key": 0,
+    "Chance": 100.0,
+    "Reach": {
+      "min": 3.0,
+      "max": 3.1
+    },
+    "BlockReach": {
+      "min": 4.5,
+      "max": 4.5
+    }
+  },
+  "hitboxes": {
+    "enabled": false,
+    "key": 0,
+    "Expand": 1.0
+  },
+  "jumpreset": {
+    "enabled": false,
+    "key": 0,
+    "Chance": 100.0,
+    "Accuracy": {
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "keepsprint": {
+    "enabled": true,
+    "key": 0
+  },
+  "esp": {
+    "enabled": true,
+    "key": 0,
+    "Mode": "3D",
+    "HealthBar": true,
+    "RenderTeammates": false,
+    "RenderInvis": true,
+    "RenderPlayers": true,
+    "RenderMobs": true,
+    "RenderAnimals": false,
+    "RenderVillagers": false,
+    "RenderVisibleOnly": false,
+    "ShowExpand": false
+  },
+  "chestesp": {
+    "enabled": true,
+    "key": 0
+  },
+  "bedesp": {
+    "enabled": true,
+    "key": 0
+  },
+  "nofall": {
+    "enabled": true,
+    "key": 0,
+    "Mode": "NoGround",
+    "Blink": false,
+    "RenderBlink": false
+  },
+  "criticals": {
+    "enabled": true,
+    "key": 67,
+    "Mode": "NoGround"
+  },
+  "xray": {
+    "enabled": false,
+    "key": 0
+  },
+  "chams": {
+    "enabled": false,
+    "key": 0,
+    "RenderTeammates": false,
+    "RenderInvis": false,
+    "RenderPlayers": true,
+    "RenderMobs": true,
+    "RenderAnimals": false,
+    "RenderVillagers": false,
+    "RenderVisibleOnly": false,
+    "Opacity": 100.0
+  },
+  "panic": {
+    "enabled": false,
+    "key": 0
+  },
+  "noweb": {
+    "enabled": false,
+    "key": 0
+  },
+  "antivoid": {
+    "enabled": true,
+    "key": 0,
+    "Mode": "Position",
+    "Distance": 3.0
+  },
+  "autorespawn": {
+    "enabled": false,
+    "key": 0
+  },
+  "fastplace": {
+    "enabled": false,
+    "key": 0,
+    "Delay": 1.0,
+    "OnlyOnBlocks": false
+  },
+  "animations": {
+    "enabled": true,
+    "key": 0,
+    "Mode": "Stab"
+  },
+  "cheststealer": {
+    "enabled": false,
+    "key": 72,
+    "Delay": 50.0
+  },
+  "nametags": {
+    "enabled": true,
+    "key": 0,
+    "RenderArmour": true,
+    "RenderOffHand": false,
+    "RenderMainHand": true,
+    "RenderHealth": true,
+    "RenderDistance": true,
+    "RenderTeammates": false,
+    "RenderInvis": true,
+    "RenderPlayers": true,
+    "RenderMobs": true,
+    "RenderAnimals": false,
+    "RenderVillagers": false,
+    "RenderVisibleOnly": false
+  },
+  "richpresence": {
+    "enabled": true,
+    "key": 0
+  },
+  "speed": {
+    "enabled": false,
+    "key": 88,
+    "Mode": "NCP"
+  },
+  "autostop": {
+    "enabled": true,
+    "key": 0,
+    "OnlyOnGround": true
+  },
+  "strafe": {
+    "enabled": false,
+    "key": 0
+  },
+  "wtap": {
+    "enabled": false,
+    "key": 0,
+    "Mode": "Silent",
+    "Chance": 100.0,
+    "Delay": {
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "disabler": {
+    "enabled": false,
+    "key": 0,
+    "Mode": "Vulcan"
+  },
+  "nohitdelayinstakill": {
+    "enabled": false,
+    "key": 0,
+    "Packets": 50.0
+  },
+  "regen": {
+    "enabled": false,
+    "key": 0,
+    "Packets": 50.0,
+    "MinimumHealth": 19.0
+  },
+  "autowalk": {
+    "enabled": false,
+    "key": 0
+  },
+  "fastuse": {
+    "enabled": false,
+    "key": 0,
+    "Packets": 20.0
+  },
+  "timer": {
+    "enabled": true,
+    "key": 0,
+    "TimerMultiplier": 1.03,
+    "TimerBalanceAbuse": false
+  },
+  "step": {
+    "enabled": false,
+    "key": 0,
+    "Mode": "NCP"
+  },
+  "fakelag": {
+    "enabled": false,
+    "key": 0,
+    "Delay": {
+      "min": 150.0,
+      "max": 150.0
+    },
+    "KeepAliveOnly": false
+  },
+  "autoauth": {
+    "enabled": false,
+    "key": 0,
+    "Password": "676767",
+    "RepeatRegisterPassword": true
+  },
+  "autocaptcha": {
+    "enabled": false,
+    "key": 0
+  }
+}

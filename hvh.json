@@ -1,0 +1,333 @@
+{
+  "sprint": {
+    "enabled": true,
+    "key": 0,
+    "Mode": "Omni"
+  },
+  "blink": {
+    "enabled": false,
+    "key": 66,
+    "Mode": "Normal",
+    "PulseInterval": 1.0,
+    "FakePlayer": true
+  },
+  "flight": {
+    "enabled": false,
+    "key": 70,
+    "Mode": "Motion"
+  },
+  "watermark": {
+    "enabled": true,
+    "key": 0
+  },
+  "arraylist": {
+    "enabled": true,
+    "key": 0,
+    "RenderSuffix": true,
+    "SortByLength": true,
+    "ShowRender": false
+  },
+  "killaura": {
+    "enabled": false,
+    "key": 82,
+    "Mode": "Multi",
+    "SortingMode": "Distance",
+    "Range": {
+      "min": 6.0,
+      "max": 6.0
+    },
+    "TimingMode": "CPS",
+    "AttackCharge": {
+      "min": 0.9,
+      "max": 0.9
+    },
+    "CPS": {
+      "min": 20.0,
+      "max": 20.0
+    },
+    "AutoblockMode": "Vanilla",
+    "AutoblockRange": {
+      "min": 10.0,
+      "max": 10.0
+    },
+    "AutoBlockHand": "Main",
+    "RotationMethod": "Silent",
+    "RotationMode": "Spin",
+    "RotationRange": {
+      "min": 10.0,
+      "max": 10.0
+    },
+    "RotationSpeed": {
+      "min": 1.0,
+      "max": 1.0
+    },
+    "Raycast": false,
+    "MovementCorrection": false,
+    "NoSwing": false,
+    "CrackSize": 13.0,
+    "Randomization": false,
+    "AttackTeammates": false,
+    "AttackInvis": true,
+    "AttackPlayers": true,
+    "AttackMobs": true,
+    "AttackAnimals": false,
+    "AttackVillagers": false,
+    "AttackThroughWalls": true,
+    "RenderTarget": true,
+    "RenderRange": true,
+    "FOV": 360.0,
+    "AttackWhilstUsing": true,
+    "KeepSprint": true
+  },
+  "fullbright": {
+    "enabled": true,
+    "key": 0,
+    "Mode": "Effect"
+  },
+  "noslow": {
+    "enabled": true,
+    "key": 0,
+    "Mode": "Vanilla"
+  },
+  "velocity": {
+    "enabled": true,
+    "key": 0,
+    "Mode": "Cancel",
+    "Chance": 100.0,
+    "Vertical": 100.0,
+    "Horizontal": 0.0
+  },
+  "scaffold": {
+    "enabled": false,
+    "key": 71,
+    "Mode": "Normal",
+    "CPS": 40.0,
+    "PlaceHand": "Main",
+    "RotationMode": "Silent",
+    "RotationSpeed": 0.6,
+    "Raycast": false,
+    "MovementCorrection": false,
+    "NoSwing": false,
+    "AutoBlock": true,
+    "AutoBlockMode": "Legit",
+    "Randomization": false,
+    "Down": false,
+    "Crouch": false,
+    "CrouchDistance": 1.0,
+    "Jump": true,
+    "KeepY": true,
+    "RenderBlock": true
+  },
+  "backtrack": {
+    "enabled": false,
+    "key": 0,
+    "Ticks": {
+      "min": 2.0,
+      "max": 2.0
+    },
+    "RenderRealPos": false
+  },
+  "reach": {
+    "enabled": false,
+    "key": 0,
+    "Chance": 100.0,
+    "Reach": {
+      "min": 3.0,
+      "max": 3.0
+    },
+    "BlockReach": {
+      "min": 4.5,
+      "max": 4.5
+    }
+  },
+  "hitboxes": {
+    "enabled": false,
+    "key": 0,
+    "Expand": 0.1
+  },
+  "jumpreset": {
+    "enabled": false,
+    "key": 0,
+    "Chance": 100.0,
+    "Accuracy": {
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "keepsprint": {
+    "enabled": true,
+    "key": 0
+  },
+  "esp": {
+    "enabled": true,
+    "key": 0,
+    "Mode": "3D",
+    "HealthBar": true,
+    "RenderTeammates": false,
+    "RenderInvis": true,
+    "RenderPlayers": true,
+    "RenderMobs": true,
+    "RenderAnimals": false,
+    "RenderVillagers": false,
+    "RenderVisibleOnly": false,
+    "ShowExpand": false
+  },
+  "chestesp": {
+    "enabled": true,
+    "key": 0
+  },
+  "bedesp": {
+    "enabled": true,
+    "key": 0
+  },
+  "nofall": {
+    "enabled": true,
+    "key": 0,
+    "Mode": "Packet",
+    "Blink": false,
+    "RenderBlink": false
+  },
+  "criticals": {
+    "enabled": true,
+    "key": 67,
+    "Mode": "Packet"
+  },
+  "xray": {
+    "enabled": false,
+    "key": 0
+  },
+  "chams": {
+    "enabled": false,
+    "key": 0,
+    "RenderTeammates": false,
+    "RenderInvis": false,
+    "RenderPlayers": true,
+    "RenderMobs": true,
+    "RenderAnimals": false,
+    "RenderVillagers": false,
+    "RenderVisibleOnly": false,
+    "Opacity": 100.0
+  },
+  "panic": {
+    "enabled": false,
+    "key": 0
+  },
+  "noweb": {
+    "enabled": true,
+    "key": 0
+  },
+  "antivoid": {
+    "enabled": true,
+    "key": 0,
+    "Mode": "Position",
+    "Distance": 3.0
+  },
+  "autorespawn": {
+    "enabled": true,
+    "key": 0
+  },
+  "fastplace": {
+    "enabled": true,
+    "key": 0,
+    "Delay": 0.0,
+    "OnlyOnBlocks": true
+  },
+  "animations": {
+    "enabled": true,
+    "key": 0,
+    "Mode": "1.7"
+  },
+  "cheststealer": {
+    "enabled": false,
+    "key": 72,
+    "Delay": 100.0
+  },
+  "nametags": {
+    "enabled": true,
+    "key": 0,
+    "RenderArmour": true,
+    "RenderOffHand": false,
+    "RenderMainHand": true,
+    "RenderHealth": true,
+    "RenderDistance": true,
+    "RenderTeammates": false,
+    "RenderInvis": true,
+    "RenderPlayers": true,
+    "RenderMobs": true,
+    "RenderAnimals": false,
+    "RenderVillagers": false,
+    "RenderVisibleOnly": false
+  },
+  "richpresence": {
+    "enabled": true,
+    "key": 0
+  },
+  "speed": {
+    "enabled": false,
+    "key": 88,
+    "Mode": "AirStrafe"
+  },
+  "autostop": {
+    "enabled": true,
+    "key": 0,
+    "OnlyOnGround": true
+  },
+  "strafe": {
+    "enabled": false,
+    "key": 0
+  },
+  "wtap": {
+    "enabled": true,
+    "key": 0,
+    "Mode": "Silent",
+    "Chance": 100.0,
+    "Delay": {
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "disabler": {
+    "enabled": false,
+    "key": 0,
+    "Mode": "Vulcan"
+  },
+  "nohitdelayinstakill": {
+    "enabled": false,
+    "key": 0,
+    "Packets": 50.0
+  },
+  "regen": {
+    "enabled": true,
+    "key": 0,
+    "Packets": 20.0,
+    "MinimumHealth": 15.0
+  },
+  "autowalk": {
+    "enabled": false,
+    "key": 0
+  },
+  "fastuse": {
+    "enabled": false,
+    "key": 0,
+    "Packets": 20.0
+  },
+  "timer": {
+    "enabled": false,
+    "key": 0,
+    "TimerMultiplier": 1.03
+  },
+  "step": {
+    "enabled": true,
+    "key": 0,
+    "Mode": "Vanilla"
+  },
+  "fakelag": {
+    "enabled": false,
+    "key": 0,
+    "Delay": {
+      "min": 60.0,
+      "max": 90.0
+    },
+    "KeepAliveOnly": true
+  }
+}

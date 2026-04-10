@@ -1,14 +1,25 @@
 {
+  "version": "1.0.0",
   "strafe": {
     "enabled": false,
     "key": 0
+  },
+  "jesus": {
+    "enabled": false,
+    "key": 0,
+    "Mode": {
+      "selected": "Solid",
+      "settings": {
+        "Solid": {}
+      }
+    }
   },
   "panic": {
     "enabled": false,
     "key": 0
   },
   "autocaptcha": {
-    "enabled": true,
+    "enabled": false,
     "key": 0,
     "CapsolverApiKey": ""
   },
@@ -20,13 +31,26 @@
   "flight": {
     "enabled": false,
     "key": 70,
-    "Mode": "Motion"
+    "Mode": {
+      "selected": "Motion",
+      "settings": {
+        "Motion": {
+          "VanillaBypass": true,
+          "HorizontalSpeed": 0.9,
+          "VerticalSpeed": 0.9
+        },
+        "Creative": {},
+        "Airwalk": {},
+        "NCP": {},
+        "Vulcan": {}
+      }
+    }
   },
   "nametags": {
     "enabled": true,
     "key": 0,
     "RenderArmour": true,
-    "RenderOffHand": false,
+    "RenderOffHand": true,
     "RenderMainHand": true,
     "RenderHealth": true,
     "RenderDistance": true,
@@ -53,11 +77,16 @@
     },
     "CPS": {
       "min": 6.0,
-      "max": 14.0
+      "max": 6.0
     },
     "AttackWhilstUsing": false,
-    "ClickInGuis": true,
+    "ClickInGuis": false,
     "BreakBlocks": false
+  },
+  "inventorymove": {
+    "enabled": true,
+    "key": 0,
+    "Blink": false
   },
   "arraylist": {
     "enabled": true,
@@ -69,24 +98,27 @@
   "timer": {
     "enabled": false,
     "key": 71,
-    "TimerMultiplier": 2.09,
+    "TimerMultiplier": 2.0,
     "TimerBalanceAbuse": true
   },
   "scaffold": {
     "enabled": false,
     "key": 71,
     "Mode": "Backwards",
-    "CPS": 20.0,
+    "Delay": {
+      "min": 40.0,
+      "max": 54.0
+    },
     "PlaceHand": "Main",
     "RotationMode": "Silent",
-    "RotationSpeed": 1.0,
-    "Raycast": false,
+    "RotationSpeed": 0.8,
+    "Raycast": true,
     "MovementCorrection": false,
     "NoSwing": false,
     "AutoBlock": true,
     "AutoBlockMode": "Legit",
     "Randomization": false,
-    "Expand": 4.0,
+    "Expand": 5.0,
     "Down": false,
     "Crouch": false,
     "CrouchDistance": 1.0,
@@ -105,7 +137,19 @@
   "step": {
     "enabled": false,
     "key": 0,
-    "Mode": "NCP"
+    "Mode": {
+      "selected": "Vanilla",
+      "settings": {
+        "Vanilla": {
+          "StepHeight": 1.0
+        },
+        "Spider": {
+          "SpiderSpeed": 0.1
+        },
+        "Jump": {},
+        "NCP": {}
+      }
+    }
   },
   "richpresence": {
     "enabled": true,
@@ -114,7 +158,12 @@
   "disabler": {
     "enabled": true,
     "key": 0,
-    "Mode": "Vulcan"
+    "Mode": {
+      "selected": "DeathZone",
+      "settings": {
+        "DeathZone": {}
+      }
+    }
   },
   "autorespawn": {
     "enabled": false,
@@ -122,25 +171,31 @@
   },
   "blink": {
     "enabled": false,
-    "key": 66,
+    "key": 0,
     "Mode": "Normal",
     "PulseInterval": 1.0,
-    "FakePlayer": true
-  },
-  "wtap": {
-    "enabled": true,
-    "key": 0,
-    "Mode": "Silent",
-    "Chance": 100.0,
-    "Delay": {
-      "min": 0.0,
-      "max": 0.0
-    }
+    "FakePlayer": false
   },
   "speed": {
     "enabled": false,
     "key": 88,
-    "Mode": "AirStrafe"
+    "Mode": {
+      "selected": "AirStrafe",
+      "settings": {
+        "AirStrafe": {
+          "Speed": 0.6
+        },
+        "GroundStrafe": {
+          "Speed": 1.0
+        },
+        "Ground": {
+          "Speed": 1.0
+        },
+        "Legit": {},
+        "NCP": {},
+        "UpdatedNCP": {}
+      }
+    }
   },
   "jumpreset": {
     "enabled": false,
@@ -151,13 +206,45 @@
       "max": 0.0
     }
   },
+  "tpaura": {
+    "enabled": false,
+    "key": 0,
+    "Mode": "Single",
+    "SortingMode": "Distance",
+    "Range": {
+      "min": 20.0,
+      "max": 20.0
+    },
+    "TeleportRange": 10.0,
+    "TimingMode": "CPS",
+    "AttackCharge": {
+      "min": 0.9,
+      "max": 0.9
+    },
+    "CPS": {
+      "min": 6.0,
+      "max": 6.0
+    },
+    "NoSwing": false,
+    "CrackSize": 1.0,
+    "AttackWhilstUsing": false,
+    "AttackInGuis": false,
+    "KeepSprint": false,
+    "AutoDisable": false,
+    "AttackPlayers": true,
+    "AttackNonPlayers": false,
+    "AttackTeammates": false,
+    "AttackInvis": true,
+    "AttackThroughWalls": false,
+    "RenderPath": false
+  },
   "reach": {
     "enabled": false,
     "key": 0,
     "Chance": 100.0,
     "Reach": {
       "min": 3.0,
-      "max": 3.1
+      "max": 3.0
     },
     "BlockReach": {
       "min": 4.5,
@@ -167,19 +254,28 @@
   "autoauth": {
     "enabled": true,
     "key": 0,
-    "Password": "676767",
+    "Password": "bluclientontop",
     "RepeatRegisterPassword": true
   },
   "criticals": {
     "enabled": false,
     "key": 67,
-    "Mode": "Jump"
+    "Mode": {
+      "selected": "Edit",
+      "settings": {
+        "Packet": {},
+        "NoGround": {},
+        "Edit": {},
+        "Jump": {},
+        "Vulcan": {}
+      }
+    }
   },
   "regen": {
     "enabled": false,
     "key": 0,
-    "Packets": 50.0,
-    "MinimumHealth": 19.0
+    "Packets": 20.0,
+    "MinimumHealth": 15.0
   },
   "OreESP": {
     "enabled": false,
@@ -199,12 +295,12 @@
     "Mode": "Cancel",
     "Chance": 100.0,
     "Vertical": 100.0,
-    "Horizontal": 0.0
+    "Horizontal": 100.0
   },
   "autostop": {
     "enabled": false,
     "key": 0,
-    "OnlyOnGround": true
+    "OnlyOnGround": false
   },
   "fakelag": {
     "enabled": false,
@@ -233,14 +329,13 @@
   "esp": {
     "enabled": true,
     "key": 0,
-    "Mode": "3D",
+    "Mode": "2D",
+    "BoxRotates": true,
     "HealthBar": true,
-    "RenderTeammates": false,
+    "RenderTeammates": true,
     "RenderInvis": true,
     "RenderPlayers": true,
-    "RenderMobs": true,
-    "RenderAnimals": false,
-    "RenderVillagers": false,
+    "RenderNonPlayers": false,
     "RenderVisibleOnly": false,
     "ShowExpand": false
   },
@@ -256,7 +351,7 @@
   "hitboxes": {
     "enabled": false,
     "key": 0,
-    "Expand": 1.0
+    "Expand": 0.1
   },
   "xray": {
     "enabled": false,
@@ -270,13 +365,18 @@
     "enabled": false,
     "key": 0,
     "RenderTeammates": false,
-    "RenderInvis": false,
+    "RenderInvis": true,
     "RenderPlayers": true,
     "RenderMobs": true,
     "RenderAnimals": false,
     "RenderVillagers": false,
     "RenderVisibleOnly": false,
     "Opacity": 100.0
+  },
+  "cookiecrumbs": {
+    "enabled": true,
+    "key": 0,
+    "Length": 5.0
   },
   "watermark": {
     "enabled": true,
@@ -286,24 +386,48 @@
     "enabled": false,
     "key": 0
   },
+  "sprintreset": {
+    "enabled": false,
+    "key": 0,
+    "Mode": {
+      "selected": "Silent",
+      "settings": {
+        "Legit": {},
+        "Silent": {},
+        "WTap": {},
+        "STap": {},
+        "Sneak": {}
+      }
+    },
+    "Chance": 100.0
+  },
+  "legitreach": {
+    "enabled": false,
+    "key": 0,
+    "Delay": {
+      "min": 150.0,
+      "max": 150.0
+    },
+    "RenderRealPos": false
+  },
   "nofall": {
     "enabled": false,
     "key": 0,
-    "Mode": "AirWalk",
+    "Mode": "Packet",
     "Blink": false,
     "RenderBlink": false
   },
   "fastplace": {
     "enabled": false,
     "key": 0,
-    "Delay": 1.0,
+    "Delay": 0.0,
     "OnlyOnBlocks": false
   },
   "chatspammer": {
-    "enabled": true,
+    "enabled": false,
     "key": 0,
-    "Message": "buy bluclient @ bluclient .com",
-    "Delay": 5.0
+    "Message": "Buy bluclient @ bluclient .com!",
+    "Delay": 1.0
   },
   "fastuse": {
     "enabled": false,
@@ -343,23 +467,23 @@
     "AutoblockMode": "Vanilla",
     "AutoblockRange": {
       "min": 6.0,
-      "max": 10.0
+      "max": 6.0
     },
     "AutoBlockHand": "Main",
     "RotationMethod": "Silent",
     "RotationMode": "Smooth",
     "RotationRange": {
       "min": 6.0,
-      "max": 10.0
+      "max": 6.0
     },
     "RotationSpeed": {
-      "min": 0.6,
-      "max": 0.9
+      "min": 0.8,
+      "max": 1.0
     },
     "Randomization": true,
     "RandomizationAmount": {
-      "min": 3.0,
-      "max": 5.0
+      "min": 1.0,
+      "max": 3.0
     },
     "Raycast": true,
     "AttackPlayers": true,
@@ -373,7 +497,13 @@
   "antivoid": {
     "enabled": false,
     "key": 0,
-    "Mode": "Vulcan",
+    "Mode": {
+      "selected": "Position",
+      "settings": {
+        "Position": {},
+        "Vulcan": {}
+      }
+    },
     "Distance": 3.0
   },
   "animations": {
@@ -384,20 +514,65 @@
   "cheststealer": {
     "enabled": false,
     "key": 72,
-    "Delay": 50.0
+    "Delay": {
+      "min": 100.0,
+      "max": 100.0
+    }
   },
   "backtrack": {
     "enabled": false,
     "key": 0,
     "Ticks": {
-      "min": 2.0,
-      "max": 2.0
+      "min": 1.0,
+      "max": 1.0
     },
     "RenderRealPos": false
+  },
+  "inventorymanager": {
+    "enabled": false,
+    "key": 72,
+    "Delay": {
+      "min": 100.0,
+      "max": 100.0
+    },
+    "DropItems": true,
+    "AutoArmour": true,
+    "SwordSlot": 1.0,
+    "AxeSlot": 9.0,
+    "BlockSlot": 2.0,
+    "PotionSlot": 4.0,
+    "BowSlot": 5.0,
+    "PickaxeSlot": 8.0,
+    "ShovelSlot": 10.0,
+    "FoodSlot": 6.0,
+    "GappleSlot": 3.0
+  },
+  "safewalk": {
+    "enabled": false,
+    "key": 0
+  },
+  "nojumpdelay": {
+    "enabled": true,
+    "key": 0
+  },
+  "tracers": {
+    "enabled": false,
+    "key": 0,
+    "RenderTeammates": false,
+    "RenderInvis": true,
+    "RenderPlayers": true,
+    "RenderNonPlayers": false,
+    "RenderVisibleOnly": false
   },
   "sprint": {
     "enabled": true,
     "key": 0,
-    "Mode": "Omni"
+    "Mode": {
+      "selected": "Omni",
+      "settings": {
+        "Omni": {},
+        "Legit": {}
+      }
+    }
   }
 }

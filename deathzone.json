@@ -37,7 +37,7 @@
         "Motion": {
           "VanillaBypass": true,
           "HorizontalSpeed": 0.9,
-          "VerticalSpeed": 0.9
+          "VerticalSpeed": 1.0
         },
         "Creative": {},
         "Airwalk": {},
@@ -83,6 +83,19 @@
     "ClickInGuis": false,
     "BreakBlocks": false
   },
+  "jetpack": {
+    "enabled": false,
+    "key": 0,
+    "Mode": {
+      "selected": "Motion",
+      "settings": {
+        "Motion": {
+          "VerticalSpeed": 1.0
+        },
+        "AirJump": {}
+      }
+    }
+  },
   "inventorymove": {
     "enabled": true,
     "key": 0,
@@ -95,36 +108,40 @@
     "SortByLength": true,
     "ShowRender": false
   },
+  "noclip": {
+    "enabled": false,
+    "key": 0
+  },
   "timer": {
     "enabled": false,
-    "key": 71,
-    "TimerMultiplier": 2.0,
-    "TimerBalanceAbuse": true
+    "key": 0,
+    "TimerMultiplier": 1.0,
+    "TimerBalanceAbuse": false
   },
   "scaffold": {
     "enabled": false,
     "key": 71,
-    "Mode": "Backwards",
+    "Mode": "Normal",
     "Delay": {
-      "min": 40.0,
-      "max": 54.0
+      "min": 100.0,
+      "max": 100.0
     },
     "PlaceHand": "Main",
     "RotationMode": "Silent",
-    "RotationSpeed": 0.8,
-    "Raycast": true,
+    "RotationSpeed": 0.6,
+    "Raycast": false,
     "MovementCorrection": false,
     "NoSwing": false,
-    "AutoBlock": true,
+    "AutoBlock": false,
     "AutoBlockMode": "Legit",
     "Randomization": false,
-    "Expand": 5.0,
+    "Expand": 0.0,
     "Down": false,
     "Crouch": false,
     "CrouchDistance": 1.0,
-    "Jump": true,
-    "KeepY": true,
-    "RenderBlock": true
+    "Jump": false,
+    "KeepY": false,
+    "RenderBlock": false
   },
   "chestesp": {
     "enabled": true,
@@ -152,7 +169,7 @@
     }
   },
   "richpresence": {
-    "enabled": true,
+    "enabled": false,
     "key": 0
   },
   "disabler": {
@@ -261,7 +278,7 @@
     "enabled": false,
     "key": 67,
     "Mode": {
-      "selected": "Edit",
+      "selected": "Packet",
       "settings": {
         "Packet": {},
         "NoGround": {},
@@ -302,7 +319,7 @@
     "key": 0,
     "OnlyOnGround": false
   },
-  "fakelag": {
+  "pingspoof": {
     "enabled": false,
     "key": 0,
     "Delay": {
@@ -310,7 +327,7 @@
       "max": 150.0
     }
   },
-  "pingspoof": {
+  "fakelag": {
     "enabled": false,
     "key": 0,
     "Delay": {
@@ -329,13 +346,13 @@
   "esp": {
     "enabled": true,
     "key": 0,
-    "Mode": "2D",
+    "Mode": "3D",
     "BoxRotates": true,
     "HealthBar": true,
-    "RenderTeammates": true,
+    "RenderTeammates": false,
     "RenderInvis": true,
     "RenderPlayers": true,
-    "RenderNonPlayers": false,
+    "RenderNonPlayers": true,
     "RenderVisibleOnly": false,
     "ShowExpand": false
   },
@@ -348,14 +365,14 @@
     "enabled": false,
     "key": 0
   },
+  "xray": {
+    "enabled": false,
+    "key": 0
+  },
   "hitboxes": {
     "enabled": false,
     "key": 0,
     "Expand": 0.1
-  },
-  "xray": {
-    "enabled": false,
-    "key": 0
   },
   "bedesp": {
     "enabled": true,
@@ -376,21 +393,17 @@
   "cookiecrumbs": {
     "enabled": true,
     "key": 0,
-    "Length": 5.0
+    "Length": 10.0
   },
   "watermark": {
     "enabled": true,
-    "key": 0
-  },
-  "autoeat": {
-    "enabled": false,
     "key": 0
   },
   "sprintreset": {
     "enabled": false,
     "key": 0,
     "Mode": {
-      "selected": "Silent",
+      "selected": "Legit",
       "settings": {
         "Legit": {},
         "Silent": {},
@@ -400,6 +413,10 @@
       }
     },
     "Chance": 100.0
+  },
+  "autoeat": {
+    "enabled": false,
+    "key": 0
   },
   "legitreach": {
     "enabled": false,
@@ -423,16 +440,16 @@
     "Delay": 0.0,
     "OnlyOnBlocks": false
   },
-  "chatspammer": {
-    "enabled": false,
-    "key": 0,
-    "Message": "Buy bluclient @ bluclient .com!",
-    "Delay": 1.0
-  },
   "fastuse": {
     "enabled": false,
     "key": 0,
     "Packets": 20.0
+  },
+  "chatspammer": {
+    "enabled": false,
+    "key": 0,
+    "Message": "I have a solution for you guys... it\u0027s bluclient.com",
+    "Delay": 1.0
   },
   "noweb": {
     "enabled": false,
@@ -442,6 +459,10 @@
     "enabled": false,
     "key": 82,
     "Mode": "Single",
+    "SwitchDelay": {
+      "min": 150.0,
+      "max": 150.0
+    },
     "SortingMode": "Distance",
     "Range": {
       "min": 4.5,
@@ -453,8 +474,8 @@
       "max": 0.9
     },
     "CPS": {
-      "min": 12.0,
-      "max": 16.0
+      "min": 16.0,
+      "max": 20.0
     },
     "MovementCorrection": false,
     "NoSwing": false,
@@ -490,7 +511,7 @@
     "AttackNonPlayers": false,
     "AttackTeammates": false,
     "AttackInvis": true,
-    "AttackThroughWalls": true,
+    "AttackThroughWalls": false,
     "RenderTarget": true,
     "RenderRange": true
   },
@@ -561,7 +582,7 @@
     "RenderTeammates": false,
     "RenderInvis": true,
     "RenderPlayers": true,
-    "RenderNonPlayers": false,
+    "RenderNonPlayers": true,
     "RenderVisibleOnly": false
   },
   "sprint": {

@@ -62,6 +62,17 @@
     "RenderVillagers": false,
     "RenderVisibleOnly": false
   },
+  "fullbright": {
+    "enabled": true,
+    "key": 0,
+    "Mode": {
+      "selected": "Effect",
+      "settings": {
+        "Gamma": {},
+        "Effect": {}
+      }
+    }
+  },
   "autoclicker": {
     "enabled": false,
     "key": 0,
@@ -105,7 +116,7 @@
   },
   "noclip": {
     "enabled": false,
-    "key": 0
+    "key": -1
   },
   "timer": {
     "enabled": false,
@@ -144,7 +155,8 @@
   },
   "freecam": {
     "enabled": false,
-    "key": 0
+    "key": 0,
+    "Speed": 1.0
   },
   "step": {
     "enabled": false,
@@ -579,6 +591,11 @@
     "RenderPlayers": true,
     "RenderNonPlayers": true,
     "RenderVisibleOnly": false
+  },
+  "vclip": {
+    "enabled": true,
+    "key": 89,
+    "Range": 10.0
   },
   "sprint": {
     "enabled": true,

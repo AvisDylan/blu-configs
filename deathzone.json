@@ -62,11 +62,6 @@
     "RenderVillagers": false,
     "RenderVisibleOnly": false
   },
-  "fullbright": {
-    "enabled": true,
-    "key": 0,
-    "Mode": "Effect"
-  },
   "autoclicker": {
     "enabled": false,
     "key": 0,

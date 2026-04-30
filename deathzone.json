@@ -35,7 +35,7 @@
       "selected": "Motion",
       "settings": {
         "Motion": {
-          "VanillaBypass": true,
+          "VanillaBypass": false,
           "HorizontalSpeed": 0.9,
           "VerticalSpeed": 1.0
         },
@@ -116,7 +116,7 @@
   },
   "noclip": {
     "enabled": false,
-    "key": -1
+    "key": 0
   },
   "timer": {
     "enabled": false,
@@ -180,7 +180,7 @@
     "key": 0
   },
   "disabler": {
-    "enabled": true,
+    "enabled": false,
     "key": 0,
     "Mode": {
       "selected": "DeathZone",
@@ -285,7 +285,7 @@
     "enabled": false,
     "key": 67,
     "Mode": {
-      "selected": "Packet",
+      "selected": "Edit",
       "settings": {
         "Packet": {},
         "NoGround": {},
@@ -322,7 +322,7 @@
     "Horizontal": 100.0
   },
   "autostop": {
-    "enabled": false,
+    "enabled": true,
     "key": 0,
     "OnlyOnGround": false
   },
@@ -518,7 +518,7 @@
     "AttackNonPlayers": false,
     "AttackTeammates": false,
     "AttackInvis": true,
-    "AttackThroughWalls": false,
+    "AttackThroughWalls": true,
     "RenderTarget": true,
     "RenderRange": true
   },
@@ -593,7 +593,7 @@
     "RenderVisibleOnly": false
   },
   "vclip": {
-    "enabled": true,
+    "enabled": false,
     "key": 89,
     "Range": 10.0
   },
